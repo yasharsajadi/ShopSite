@@ -214,11 +214,13 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 .tabcontent {
     color: white;
     display: none;
-    padding: 100px 20px;
+    padding: 100px 2px;
     height: 100%;
     margin-left: 2rem;
     margin-right: 2rem;
     border-radius: 0.25rem;
+
+    
     
 }
 
@@ -245,22 +247,27 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 button[class*=btn] {
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: #544639;
-    /* border-radius: 6px; */
+
     border: none;
     cursor: pointer;
 }
 .minus-btn img {
-    margin-bottom: 5px;
-    margin-left: 5px;
+    margin-left: 0.5rem;
+    margin-bottom: 0.25rem;
+    max-width: 50%;
+    /* margin-bottom: 5px; */
     
 }
 .plus-btn img {
-    /* margin-top: 5px; */
-    margin-left: 1px;
+    margin-left: 0.25rem;
+    margin-bottom: 0.0625rem;
+    max-width: 50%;
+    
 }
+
 button:focus,
 input:focus {
     outline:0;
