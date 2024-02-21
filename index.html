@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کافه ایت</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css"> <!-- fontawesome -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
+    <link rel="stylesheet" href="styles.css">
+
+    
+    
+<!--
+
+-->
+</head>
+<body>    
+    <!-- Intro -->
+    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-01.jpg">
+        <!-- <nav id="tm-nav" class="fixed w-full">
+            <div class="tm-container mx-auto px-2 md:py-6 text-right">
+                <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
+                <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
+                    <li class="inline-block mb-4 mx-4"><a href="#contact" class="tm-text-gold py-1 md:py-3 px-4">ارتباط با ما</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">منو</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#intro" class="tm-text-gold py-1 md:py-3 px-4">کافه ایت</a></li>
+                </ul>
+            </div>            
+        </nav> -->
+        <div class="container mx-auto px-2 tm-intro-width">
+            <div class="sm:pb-60 sm:pt-48 py-20">
+                <div class="bg-black bg-opacity-70 p-12 mb-5 text-center">
+                    <h1 class="text-white text-5xl tm-logo-font mb-5">کافه ایت</h1>
+                    <p class="tm-text-gold tm-text-2xl">هشت دقیقه تو با ما بگذرون</p>
+                </div>    
+                <div class="bg-black bg-opacity-70 p-10 mb-5 text-center">
+                    <p class="text-white leading-8 text-sm font-light">
+                        روزها، خاطرات و رویدادهای دلخواهتون رو باایت تجربه کنید
+                        <br>
+                        (:
+                        <br>
+                        <a rel="nofollow" href="https://www.instagram.com/8eight.caffe?utm_source=qr&igsh=MzRlODBiNWFlZA%3D%3D" target="_parent">ما را در اینستاگرام دنبال کنید</a></p>
+                </div>         
+            </div>
+        </div>        
+    </div>
+
+    <!-- Cafe Menu -->
+    <div id="menu" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-02.jpg">
+        <div class="container mx-auto tm-container py-24 sm:py-48">
+            <div class="text-center mb-16">
+                <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">منوی ما</h2>
+            </div>
+
+
+            <div class="tabs">
+                <button class="tablink tm-text-gold" onclick="openPage('Hot', this, 'red')" id="defaultOpen">نوشیدنی های گرم</button>
+                <button class="tablink tm-text-gold" onclick="openPage('Cold', this, 'green')" >نوشیدنی های سرد</button>
+                <button class="tablink tm-text-gold" onclick="openPage('Snack', this, 'blue')">میان وعده</button>
+                <button class="tablink tm-text-gold" onclick="openPage('Dessert', this, 'orange')">دسر</button>
+            </div>
+            
+            <div id="Hot" class="tabcontent">
+                <div class="flex flex-col lg:flex-row justify-around items-center">
+                  <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
+
+                    <div class="flex items-start mb-6 tm-menu-item">
+                      <img src="img/menu-item-1.jpg" alt="Image" class="rounded-md">
+                      <div class="ml-3 sm:ml-6">
+
+
+                        <!-- <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">هات کاپوچینو</h3>
+                        <div class="text-white text-md sm:text-lg font-light mb-1">۶۵ kT</div> -->
+                        
+                        <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">هات کاپوچینو</h3>
+                        <div class="text-white text-md sm:text-lg font-light mb-1">۶۵ kT</div>
+                        <div class="quantity">
+                            <button class="minus-btn" type="button" name="button">
+                                <img src="svgs/minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0">
+                            <button class="plus-btn" type="button" name="button">
+                                <img src="svgs/plus.svg" alt="" />
+                            </button>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+
+
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/menu-item-2.jpg" alt="Image" class="rounded-md">
+                        <div class="ml-3 sm:ml-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">هات امریکانو</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">۶۵ kT</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/menu-item-3.jpg" alt="Image" class="rounded-md">
+                        <div class="ml-3 sm:ml-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">هات لاته</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">۶۵ kT</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/menu-item-4.jpg" alt="Image" class="rounded-md">
+                        <div class="ml-3 sm:ml-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">هات اسپرسو</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">۶۵ kT</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/menu-item-4.jpg" alt="Image" class="rounded-md">
+                        <div class="ml-3 sm:ml-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">هات چاکلت</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">۶۵ kT</div>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+            
+            <div id="Cold" class="tabcontent">
+                <div class="flex flex-col lg:flex-row justify-around items-center">
+                  <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
+
+                    <div class="flex items-start mb-6 tm-menu-item">
+                      <img src="img/menu-item-5.jpg" alt="Image" class="rounded-md">
+                      <div class="ml-3 sm:ml-6">
+                        <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">کاپوچینو سرد</h3>
+                        <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                      </div>
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/menu-item-6.jpg" alt="Image" class="rounded-md">
+                        <div class="ml-3 sm:ml-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">امریکانو سرد</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/menu-item-7.jpg" alt="Image" class="rounded-md">
+                        <div class="ml-3 sm:ml-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">لاته سرد</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/menu-item-8.jpg" alt="Image" class="rounded-md">
+                        <div class="ml-3 sm:ml-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">اسپرسو سرد</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/menu-item-8.jpg" alt="Image" class="rounded-md">
+                        <div class="ml-3 sm:ml-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">موکا سرد</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+            
+            <div id="Snack" class="tabcontent">
+                <div class="flex flex-col lg:flex-row justify-around items-center">
+                    <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
+                        
+                        <div class="flex items-start mb-6 tm-menu-item">
+                            <img src="img/menu-item-11.jpg" alt="Image" class="rounded-md">
+                            <div class="ml-3 sm:ml-6">
+                              <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">پاستا آلفردو</h3>
+                              <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                            </div>
+                          </div>
+                          <div class="flex items-start mb-6 tm-menu-item">
+                              <img src="img/menu-item-9.jpg" alt="Image" class="rounded-md">
+                              <div class="ml-3 sm:ml-6">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">اسنک ماشروم</h3>
+                                <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                              </div>
+                          </div>
+                          <div class="flex items-start mb-6 tm-menu-item">
+                              <img src="img/menu-item-10.jpg" alt="Image" class="rounded-md">
+                              <div class="ml-3 sm:ml-6">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">فرنچ فرایز با پنیر</h3>
+                                <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                              </div>
+                          </div>
+                          <div class="flex items-start mb-6 tm-menu-item">
+                              <img src="img/menu-item-11.jpg" alt="Image" class="rounded-md">
+                              <div class="ml-3 sm:ml-6">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">پاستا بوکاتینی</h3>
+                                <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                              </div>
+                          </div>
+                          <div class="flex items-start mb-6 tm-menu-item">
+                              <img src="img/menu-item-12.jpg" alt="Image" class="rounded-md">
+                              <div class="ml-3 sm:ml-6">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">سالاد سزار</h3>
+                                <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                              </div>
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div id="Dessert" class="tabcontent">
+                <div class="flex flex-col lg:flex-row justify-around items-center">
+                    <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
+
+                        <div class="flex items-start mb-6 tm-menu-item">
+                            <img src="img/menu-item-13.jpg" alt="Image" class="rounded-md">
+                            <div class="ml-3 sm:ml-6">
+                              <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">کیک شکلاتی</h3>
+                              <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                            </div>
+                          </div>
+                          <div class="flex items-start mb-6 tm-menu-item">
+                              <img src="img/menu-item-14.jpg" alt="Image" class="rounded-md">
+                              <div class="ml-3 sm:ml-6">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">کیک گردویی</h3>
+                                <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                              </div>
+                          </div>
+                          <div class="flex items-start mb-6 tm-menu-item">
+                              <img src="img/menu-item-15.jpg" alt="Image" class="rounded-md">
+                              <div class="ml-3 sm:ml-6">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">ردولوت</h3>
+                                <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                              </div>
+                          </div>
+                          <div class="flex items-start mb-6 tm-menu-item">
+                              <img src="img/menu-item-16.jpg" alt="Image" class="rounded-md">
+                              <div class="ml-3 sm:ml-6">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">چیز کیک</h3>
+                                <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                              </div>
+                          </div>
+                          <div class="flex items-start mb-6 tm-menu-item">
+                              <img src="img/menu-item-17.jpg" alt="Image" class="rounded-md">
+                              <div class="ml-3 sm:ml-6">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">کیک خیس</h3>
+                                <div class="text-white text-md sm:text-lg font-light mb-1">۹۵ kT</div>
+                              </div>
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ORDER -->
+            <div class="text-center m-5">
+                <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md" >
+                    <span class="block text-right"><a href="https://yasharsajadi.github.io/Home/" class="hover:text-yellow-600 transition">ثبت سفارش</a></span>
+                </h2>
+                
+            </div>
+
+            
+
+            
+            
+        </div>        
+    </div>
+
+    <!-- End -->
+    <div id="contact" class="parallax-window relative" data-parallax="scroll" data-image-src="img/antique-cafe-bg-04.jpg">
+        <div class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
+            <div class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
+                <div class="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
+                    <h2 class="tm-text-brown mb-6 tm-text-green text-center">با ما در ارتباط باشید</h2>
+                    <p class="mb-6 text-lg leading-8 text-right">
+                        مشاقانه در انتظار دیدن شما در کافه ایت هستیم، وعده دیدار ما هروز از ۸ صبح تا ۱۰ شب   
+                    </p>
+                    <p class="mb-10 text-lg">
+                        <span class="block mb-2 text-right">تلفن: <a href="tel:09129339688" class="hover:text-yellow-600 transition">09129339688</a></span>
+                        <span class="block text-right">اینستاگرام: <a href="https://www.instagram.com/8eight.caffe?utm_source=qr&igsh=MzRlODBiNWFlZA%3D%3D" class="hover:text-yellow-600 transition">کافه ایت</a></span>                        
+                    </p>
+                                      
+                </div>
+                
+            </div>
+
+            <footer class="absolute bottom-0 left-0 w-full">
+                <div class="text-white container mx-auto tm-container p-8 text-lg flex flex-col md:flex-row justify-between">
+                    <span class="text-right tm-logo-font"> کلیه حقوق این سایت متعلق به کافه ایت می باشد </span>
+                    <span class="mt-5 md:mt-0 tm-text-wincento">Design: <a href="https://yasharsajadi.github.io/Home/" target="_parent">WinCento</a></span>
+                </div>                
+            </footer>
+        </div>        
+    </div>    
+
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script>
+        // JS function to be display tab contents 
+        function openPage(pageName, elmnt, color) {
+          var i, tabcontent, tablinks;
+    
+          // Hidding
+          tabcontent = document.querySelectorAll('.tabcontent');
+          tabcontent.forEach(function(content) {
+            content.style.display = 'none';
+          });
+    
+          // Removing Actives Classes
+          tablinks = document.querySelectorAll('.tablink');
+          tablinks.forEach(function(tablink) {
+            tablink.classList.remove('active');
+          });
+    
+          // Showing
+          document.getElementById(pageName).style.display = 'block';
+    
+          // Active Classes
+          elmnt.classList.add('active');
+        }
+    
+        // Initial Tab
+        document.getElementById('defaultOpen').click();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var menuToggle = document.getElementById('menu-toggle');
+        var menuList = document.getElementById('menu-list');
+
+        // 
+        menuToggle.addEventListener('click', function() {
+            // 
+            menuList.classList.toggle('hidden');
+        });
+
+        // 
+        var menuLinks = document.querySelectorAll('#menu-list a');
+        menuLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                menuList.classList.add('hidden');
+            });
+        });
+    });
+    </script>
+    <script type="text/javascript">
+        $('.minus-btn').on('click', function(e) {
+              e.preventDefault();
+              var $this = $(this);
+              var $input = $this.closest('div').find('input');
+              var value = parseInt($input.val());
+  
+              if (value > 1) {
+                  value = value - 1;
+              } else {
+                  value = 0;
+              }
+  
+          $input.val(value);
+  
+          });
+  
+          $('.plus-btn').on('click', function(e) {
+              e.preventDefault();
+              var $this = $(this);
+              var $input = $this.closest('div').find('input');
+              var value = parseInt($input.val());
+  
+              if (value < 100) {
+                value = value + 1;
+              } else {
+                  value =100;
+              }
+  
+              $input.val(value);
+          });
+  
+        $('.like-btn').on('click', function() {
+          $(this).toggleClass('is-active');
+        });
+    </script>
+    
+</body>
+</html>

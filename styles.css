@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'dastnevis'; /* Replace 'YourFont' with the desired font name */
+    src: url('fonts/dastnevis.ttf') format('truetype'); /* Adjust the path to your font file */
+}
+@font-face {
+    font-family: 'Delbar2 Bold'; /* Replace 'YourFont' with the desired font name */
+    src: url('fonts/Delbar2 Bold.ttf') format('truetype'),
+    url('fonts/Delbar2 Bold.otf') format(''); 
+}
+@font-face {
+    font-family: 'Digi Nofar Bold'; /* Replace 'YourFont' with the desired font name */
+    src: url('fonts/Digi Nofar Bold.ttf') format('truetype');
+}
+
+
+
+
